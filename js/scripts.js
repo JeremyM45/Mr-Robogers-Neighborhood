@@ -24,5 +24,10 @@ function detectNum(number)  {
       return 2
     }
   }
+  for (let i = 0; i < splitNum.length; i++)  {
+    if (splitNum[i] === 1) {
+      return 1
+    }
+  }
   return false;
 }
