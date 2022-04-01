@@ -14,9 +14,14 @@ function detectNum(number)  {
     let digit = parseInt(element);
     splitNum[index] = digit;
   })
-  for (i = 0; i < splitNum.length; i++) {
+  for (let i = 0; i < splitNum.length; i++) {
     if (splitNum[i] === 3)  {
-      return true
+      return 3
+    } 
+  }
+  for (let i = 0; i < splitNum.length; i++)  {
+    if (splitNum[i] === 2) {
+      return 2
     }
   }
   return false;
