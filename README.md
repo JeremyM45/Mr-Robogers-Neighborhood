@@ -70,10 +70,10 @@ Describe: (detectNum)
   Code: detectNum(301)
   Expected Output: "Won't you be my neighbor?" -->
 
-   Test: "It should replace number with 2 in it to "Boop!" by passing to (boop)"
+  <!-- Test: "It should replace number with 2 in it to "Boop!" by passing to (boop)"
   Code: detectNum(201)
-  Expected Output: "Boop!"
+  Expected Output: "Boop!" -->
 
-   Test: "It should replace number with 1 in it to "Beep!" by passing to (beep)"
+  Test: "It should replace number with 1 in it to "Beep!" by passing to (beep)"
   Code: detectNum(101)
   Expected Output: "Beep!"

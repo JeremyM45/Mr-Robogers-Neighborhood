@@ -33,8 +33,8 @@ function detectNum(number)  {
   for (let i = 0; i < splitNum.length; i++)  {
     if (splitNum[i] === 1) {
       let wholeNum = splitNum.join("");
-      wholeNum = parseInt(wholeNum);
-      return wholeNum
+      replaceNum = beep(wholeNum)
+      return replaceNum;
     }
   }
   let wholeNum = splitNum.join("");
