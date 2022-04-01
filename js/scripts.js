@@ -9,10 +9,15 @@ function boopBeep(string) {
 }
 
 function detectNum(number)  {
-  let splitNum = number.toString().split("")
+  let splitNum = number.toString().split("");
   splitNum.forEach(function(element, index)  {
-    let digit = parseInt(element)
-    splitNum[index] = digit
+    let digit = parseInt(element);
+    splitNum[index] = digit;
   })
-  return splitNum
+  for (i = 0; i < splitNum.length; i++) {
+    if (splitNum[i] === 3)  {
+      return true
+    }
+  }
+  return false;
 }

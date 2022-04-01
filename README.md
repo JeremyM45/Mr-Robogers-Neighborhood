@@ -14,6 +14,18 @@ Describe: boopBeep()
 
 Describe: (detectNum)
 
-  Test: "It should return a multiple digit number as an array of the two digits split apart"
+  <!-- Test: "It should return a multiple digit number as an array of the two digits split apart"
   Code: detectNum(10)
-  Expected Output: [1, 0]
+  Expected Output: [1, 0] -->
+
+  <!-- Test: "It should detect if one of the split digits is a 3"
+  Code: detectNum(30)
+  Expected Output: true  -->
+
+  Test: "It should detect if one of the split digits is a 2"
+  Code: detectNum(102)
+  Expected Output: true
+  
+  Test: "It should detect if one of the split digits is a 1"
+  Code: detectNum(401)
+  Expected Output: true  
