@@ -53,3 +53,13 @@ Describe: (detectNum)
   <!-- Test: It should change string from string of the number to "Boop!"
   Code: boop(52)
   Expected Output: "Boop!" -->
+
+  Describe: (beMyNeighbor)
+
+  Test: It should take number and convert to string
+  Code: beMyNeighbor(68)
+  Expected Output: "68"
+
+  Test: It should change string from string of the number to "Won't you be my neighbor?"
+  Code: beMyNeighbor(68)
+  Expected Output: "Won't you be my neighbor?" 

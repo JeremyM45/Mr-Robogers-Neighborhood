@@ -42,12 +42,17 @@ function detectNum(number)  {
 
 function beep(number) {
   let string = number.toString();
-  string = "Beep!"
+  string = "Beep!";
   return string;
 }
 
 function boop(number) {
   let string = number.toString();
-  string = "Boop!"
+  string = "Boop!";
+  return string;
+}
+
+function beMyNeighbor(number) {
+  let string = number.toString();
   return string;
 }
