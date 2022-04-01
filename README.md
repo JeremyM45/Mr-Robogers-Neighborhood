@@ -22,10 +22,14 @@ Describe: (detectNum)
   Code: detectNum(30)
   Expected Output: true  -->
 
-  Test: "It should detect if one of the split digits is a 2"
+  <!-- Test: "It should detect if one of the split digits is a 2"
   Code: detectNum(102)
-  Expected Output: true
+  Expected Output: true -->
   
-  Test: "It should detect if one of the split digits is a 1"
+  <!-- Test: "It should detect if one of the split digits is a 1"
   Code: detectNum(401)
-  Expected Output: true  
+  Expected Output: true   -->
+
+  Test: "It should combine split digit back into whole number"
+  Code: detectNum(203)
+  Expected Output: 203
