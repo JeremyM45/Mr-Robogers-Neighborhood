@@ -26,7 +26,8 @@ function detectNum(number)  {
     if (splitNum[i] === 2) {
       let wholeNum = splitNum.join("");
       wholeNum = parseInt(wholeNum);
-      return wholeNum;
+      replaceNum = boop(wholeNum)
+      return replaceNum;
     }
   }
   for (let i = 0; i < splitNum.length; i++)  {

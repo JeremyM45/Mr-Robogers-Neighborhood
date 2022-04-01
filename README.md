@@ -66,9 +66,9 @@ Describe: (detectNum)
 
   Describe: (detectNum)
 
-  Test: "It should replace number with 3 in it to "Won't you be my neighbor?" by passing to (beMyNeighbor)"
+  <!-- Test: "It should replace number with 3 in it to "Won't you be my neighbor?" by passing to (beMyNeighbor)"
   Code: detectNum(301)
-  Expected Output: "Won't you be my neighbor?"
+  Expected Output: "Won't you be my neighbor?" -->
 
    Test: "It should replace number with 2 in it to "Boop!" by passing to (boop)"
   Code: detectNum(201)
