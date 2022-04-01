@@ -46,10 +46,10 @@ Describe: (detectNum)
 
   Describe: (boop)
 
-  Test: It should take number and convert to string
+  <!-- Test: It should take number and convert to string
   Code: boop(52)
-  Expected Output: "52"
+  Expected Output: "52" -->
 
-  Test: It should change string from string of the number to "Boop!"
+  <!-- Test: It should change string from string of the number to "Boop!"
   Code: boop(52)
-  Expected Output: "Boop!"
+  Expected Output: "Boop!" -->

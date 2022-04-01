@@ -48,5 +48,6 @@ function beep(number) {
 
 function boop(number) {
   let string = number.toString();
+  string = "Boop!"
   return string;
 }
