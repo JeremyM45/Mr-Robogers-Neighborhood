@@ -80,6 +80,10 @@ Describe: (detectNum)
 
 Describe: (boopBeep)
 
-  Test: "It should loop through array sending all elements to detectNum"
+  <!-- Test: "It should loop through array sending all elements to detectNum"
   Code: boopBeep("5")
-  Expected Output: ["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5"]
+  Expected Output: ["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5"] -->
+
+  Test: "It should convert finalArray into string so the results can be displayed"
+  Code: boopBeep("5")
+  Expected Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5"

@@ -10,7 +10,8 @@ function boopBeep(string) {
     finalString = detectNum(element);
     finalArray.push(finalString);
   })
-  return finalArray;
+  const results = finalArray.join(", ")
+  return results;
 }
 
 function detectNum(number)  {
