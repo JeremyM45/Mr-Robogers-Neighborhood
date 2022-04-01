@@ -77,4 +77,13 @@ $(document).ready(function()  {
     let result = boopBeep(number, name);
     $(".output").html(result)
   });
+  $("form#reversed").submit(function(e) {
+    e.preventDefault();
+    const number = $("#inputNumber").val();
+    const name = $("#inputName").val();
+    let result = boopBeep(number, name);
+    let reversed = result.split("")
+    reversed = reversed.reverse();
+    $(".output").html(reversed)
+  })
 });

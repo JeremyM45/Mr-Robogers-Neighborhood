@@ -22,8 +22,13 @@ img {
 }
 .row .btn  {
   position: relative;
-  left: 46%;
+  left: 37%;
   border: 1px solid black;
+  font-family: Segoe Print;
+}
+.row  #reversed {
+  position: relative;
+  left: 42%;
   font-family: Segoe Print;
 }
 .btn:hover  {
