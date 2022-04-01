@@ -34,7 +34,7 @@ Describe: (detectNum)
   Code: detectNum(203)
   Expected Output: 203 -->
 
-  Describe: (beep)
+Describe: (beep)
 
   <!-- Test: It should take number and convert to string
   Code: beep(43)
@@ -44,7 +44,7 @@ Describe: (detectNum)
   Code: beep(43)
   Expected Output: "Beep!" -->
 
-  Describe: (boop)
+Describe: (boop)
 
   <!-- Test: It should take number and convert to string
   Code: boop(52)
@@ -54,7 +54,7 @@ Describe: (detectNum)
   Code: boop(52)
   Expected Output: "Boop!" -->
 
-  Describe: (beMyNeighbor)
+Describe: (beMyNeighbor)
 
   <!-- Test: It should take number and convert to string
   Code: beMyNeighbor(68)
@@ -64,7 +64,7 @@ Describe: (detectNum)
   Code: beMyNeighbor(68)
   Expected Output: "Won't you be my neighbor?"  -->
 
-  Describe: (detectNum)
+Describe: (detectNum)
 
   <!-- Test: "It should replace number with 3 in it to "Won't you be my neighbor?" by passing to (beMyNeighbor)"
   Code: detectNum(301)
@@ -74,6 +74,12 @@ Describe: (detectNum)
   Code: detectNum(201)
   Expected Output: "Boop!" -->
 
-  Test: "It should replace number with 1 in it to "Beep!" by passing to (beep)"
+  <!-- Test: "It should replace number with 1 in it to "Beep!" by passing to (beep)"
   Code: detectNum(101)
-  Expected Output: "Beep!"
+  Expected Output: "Beep!" -->
+
+Describe: (boopBeep)
+
+  Test: "It should loop through array sending all elements to detectNum"
+  Code: boopBeep("5")
+  Expected Output: ["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5"]

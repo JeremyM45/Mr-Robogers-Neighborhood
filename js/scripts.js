@@ -1,11 +1,16 @@
 function boopBeep(string) {
   let num = parseInt(string);
   const numArray = [];
+  const finalArray = [];
   for (let i = 0; i <= num; i++)  {
     number = i;
     numArray.push(number);
   }
-  return numArray;
+  numArray.forEach(function(element) {
+    finalString = detectNum(element);
+    finalArray.push(finalString);
+  })
+  return finalArray;
 }
 
 function detectNum(number)  {
@@ -38,7 +43,6 @@ function detectNum(number)  {
     }
   }
   let wholeNum = splitNum.join("");
-  wholeNum = parseInt(wholeNum);
   return wholeNum;
 }
 
