@@ -34,8 +34,12 @@ Describe: (detectNum)
   Code: detectNum(203)
   Expected Output: 203 -->
 
-  Describe: (boop)
+  Describe: (beep)
 
   Test: It should take number and convert to string
-  Code: boop(43)
+  Code: beep(43)
   Expected Output: "43"
+
+  Test: It should change string from string of the number to "Beep!"
+  Code: beep(43)
+  Expected Output: "Beep!"

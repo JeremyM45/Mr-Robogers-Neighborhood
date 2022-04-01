@@ -41,6 +41,7 @@ function detectNum(number)  {
 }
 
 function beep(number) {
-  string = number.toString();
+  let string = number.toString();
+  string = "Beep!"
   return string;
 }
