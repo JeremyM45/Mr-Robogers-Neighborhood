@@ -16,24 +16,31 @@ function detectNum(number)  {
   })
   for (let i = 0; i < splitNum.length; i++) {
     if (splitNum[i] === 3)  {
-      let wholeNum = splitNum.join("")
-      wholeNum = parseInt(wholeNum)
-      return wholeNum
+      let wholeNum = splitNum.join("");
+      wholeNum = parseInt(wholeNum);
+      return wholeNum;
     } 
   }
   for (let i = 0; i < splitNum.length; i++)  {
     if (splitNum[i] === 2) {
-      let wholeNum = splitNum.join("")
-      wholeNum = parseInt(wholeNum)
-      return wholeNum
+      let wholeNum = splitNum.join("");
+      wholeNum = parseInt(wholeNum);
+      return wholeNum;
     }
   }
   for (let i = 0; i < splitNum.length; i++)  {
     if (splitNum[i] === 1) {
-      let wholeNum = splitNum.join("")
-      wholeNum = parseInt(wholeNum)
-      return wholeNum
+      let wholeNum = splitNum.join("");
+      wholeNum = parseInt(wholeNum);
+      return wholeNum;
     }
   }
-  return false;
+  let wholeNum = splitNum.join("");
+  wholeNum = parseInt(wholeNum);
+  return wholeNum;
+}
+
+function beep(number) {
+  string = number.toString();
+  return string;
 }

@@ -30,6 +30,12 @@ Describe: (detectNum)
   Code: detectNum(401)
   Expected Output: true   -->
 
-  Test: "It should combine split digit back into whole number"
+  <!-- Test: "It should combine split digit back into whole number"
   Code: detectNum(203)
-  Expected Output: 203
+  Expected Output: 203 -->
+
+  Describe: (boop)
+
+  Test: It should take number and convert to string
+  Code: boop(43)
+  Expected Output: "43"
