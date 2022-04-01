@@ -3,7 +3,7 @@ body  {
 }
 label {
   width: 20%;
-  font-weight: bold;
+  font-family: Segoe Print
 }
 h1  {
   text-align: center;
@@ -22,9 +22,14 @@ img {
 }
 .row .btn  {
   position: relative;
-  left: 47%;
+  left: 46%;
   border: 1px solid black;
+  font-family: Segoe Print;
 }
 .btn:hover  {
   background-color: rgb(94, 180, 251);
+}
+.output {
+  font-family: Rockwell, serif;
+  font-weight: bold;
 }
