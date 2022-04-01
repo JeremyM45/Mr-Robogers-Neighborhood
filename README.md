@@ -60,6 +60,20 @@ Describe: (detectNum)
   Code: beMyNeighbor(68)
   Expected Output: "68" -->
 
-  Test: It should change string from string of the number to "Won't you be my neighbor?"
+  <!-- Test: It should change string from string of the number to "Won't you be my neighbor?"
   Code: beMyNeighbor(68)
-  Expected Output: "Won't you be my neighbor?" 
+  Expected Output: "Won't you be my neighbor?"  -->
+
+  Describe: (detectNum)
+
+  Test: "It should replace number with 3 in it to "Won't you be my neighbor?" by passing to (beMyNeighbor)"
+  Code: detectNum(301)
+  Expected Output: "Won't you be my neighbor?"
+
+   Test: "It should replace number with 2 in it to "Boop!" by passing to (boop)"
+  Code: detectNum(201)
+  Expected Output: "Boop!"
+
+   Test: "It should replace number with 1 in it to "Beep!" by passing to (beep)"
+  Code: detectNum(101)
+  Expected Output: "Beep!"

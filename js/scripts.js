@@ -18,7 +18,8 @@ function detectNum(number)  {
     if (splitNum[i] === 3)  {
       let wholeNum = splitNum.join("");
       wholeNum = parseInt(wholeNum);
-      return wholeNum;
+      replaceNum = beMyNeighbor(wholeNum)
+      return replaceNum;
     } 
   }
   for (let i = 0; i < splitNum.length; i++)  {
