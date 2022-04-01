@@ -36,10 +36,20 @@ Describe: (detectNum)
 
   Describe: (beep)
 
-  Test: It should take number and convert to string
+  <!-- Test: It should take number and convert to string
   Code: beep(43)
-  Expected Output: "43"
+  Expected Output: "43" -->
 
-  Test: It should change string from string of the number to "Beep!"
+  <!-- Test: It should change string from string of the number to "Beep!"
   Code: beep(43)
-  Expected Output: "Beep!"
+  Expected Output: "Beep!" -->
+
+  Describe: (boop)
+
+  Test: It should take number and convert to string
+  Code: boop(52)
+  Expected Output: "52"
+
+  Test: It should change string from string of the number to "Boop!"
+  Code: boop(52)
+  Expected Output: "Boop!"

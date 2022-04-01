@@ -32,7 +32,7 @@ function detectNum(number)  {
     if (splitNum[i] === 1) {
       let wholeNum = splitNum.join("");
       wholeNum = parseInt(wholeNum);
-      return wholeNum;
+      return wholeNum
     }
   }
   let wholeNum = splitNum.join("");
@@ -43,5 +43,10 @@ function detectNum(number)  {
 function beep(number) {
   let string = number.toString();
   string = "Beep!"
+  return string;
+}
+
+function boop(number) {
+  let string = number.toString();
   return string;
 }
