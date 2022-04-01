@@ -1,7 +1,7 @@
 function boopBeep(string, name) {
-  string = string.replace(/[a-zA-Z ]/g, " ")
+  string = string.replace(/[a-zA-Z ]/g, " ");
   if(string.includes(" ")) {
-    return fail()
+    return fail();
   }
   let num = parseInt(string);
   const numArray = [];
@@ -42,6 +42,7 @@ function detectNum(number, name)  {
   for (let i = 0; i < splitNum.length; i++)  {
     if (splitNum[i] === 1) {
       let wholeNum = splitNum.join("");
+      wholeNum = parseInt(wholeNum);
       replaceNum = beep(wholeNum);
       return replaceNum;
     }
@@ -65,7 +66,7 @@ function beMyNeighbor(number, name) {
   return string;
 }
 function fail() {
-  const failMessage = 'Hey buddy, it says "Enter <b>A</b> Number" So how about you try entering a number instead?'
+  const failMessage = 'Hey buddy, it says "Enter <b>A</b> Number" So how about you try entering a number instead?';
   return failMessage;
 }
 
@@ -75,15 +76,15 @@ $(document).ready(function()  {
     const number = $("#inputNumber").val();
     const name = $("#inputName").val();
     let result = boopBeep(number, name);
-    $(".output").html(result)
+    $(".output").html(result);
   });
   $("form#reversed").submit(function(e) {
     e.preventDefault();
     const number = $("#inputNumber").val();
     const name = $("#inputName").val();
     let result = boopBeep(number, name);
-    let reversed = result.split("")
+    let reversed = result.split("");
     reversed = reversed.reverse();
-    $(".output").html(reversed)
-  })
+    $(".output").html(reversed);
+  });
 });
