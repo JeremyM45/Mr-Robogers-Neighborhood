@@ -1,3 +1,5 @@
+// Business Logic
+
 function boopBeep(string) {
   let num = parseInt(string);
   const numArray = [];
@@ -10,7 +12,7 @@ function boopBeep(string) {
     finalString = detectNum(element);
     finalArray.push(finalString);
   })
-  const results = finalArray.join(", ")
+  const results = finalArray.join(", ");
   return results;
 }
 
@@ -24,7 +26,7 @@ function detectNum(number)  {
     if (splitNum[i] === 3)  {
       let wholeNum = splitNum.join("");
       wholeNum = parseInt(wholeNum);
-      replaceNum = beMyNeighbor(wholeNum)
+      replaceNum = beMyNeighbor(wholeNum);
       return replaceNum;
     } 
   }
@@ -32,14 +34,14 @@ function detectNum(number)  {
     if (splitNum[i] === 2) {
       let wholeNum = splitNum.join("");
       wholeNum = parseInt(wholeNum);
-      replaceNum = boop(wholeNum)
+      replaceNum = boop(wholeNum);
       return replaceNum;
     }
   }
   for (let i = 0; i < splitNum.length; i++)  {
     if (splitNum[i] === 1) {
       let wholeNum = splitNum.join("");
-      replaceNum = beep(wholeNum)
+      replaceNum = beep(wholeNum);
       return replaceNum;
     }
   }
@@ -61,6 +63,17 @@ function boop(number) {
 
 function beMyNeighbor(number) {
   let string = number.toString();
-  string = "Won't you be my neighbor?"
+  string = "Won't you be my neighbor?";
   return string;
 }
+
+// UI Logic
+
+$(document).ready(function()  {
+  $("form#enterNumber").submit(function(e)  {
+    e.preventDefault();
+    const number = $("#inputNumber").val();
+    const result = boopBeep(number);
+    $("#output").html(result);
+  });
+});
