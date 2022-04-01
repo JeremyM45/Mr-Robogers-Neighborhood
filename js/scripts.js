@@ -1,6 +1,10 @@
 // Business Logic
 
 function boopBeep(string, name) {
+  string = string.replace(/[a-zA-Z ]/g, " ")
+  if(string.includes(" ")) {
+    return fail()
+  }
   let num = parseInt(string);
   const numArray = [];
   const finalArray = [];
@@ -15,7 +19,6 @@ function boopBeep(string, name) {
   const results = finalArray.join(", ");
   return results;
 }
-
 function detectNum(number, name)  {
   let splitNum = number.toString().split("");
   splitNum.forEach(function(element, index)  {
@@ -48,23 +51,24 @@ function detectNum(number, name)  {
   let wholeNum = splitNum.join("");
   return wholeNum;
 }
-
 function beep(number) {
   let string = number.toString();
   string = "Beep!";
   return string;
 }
-
 function boop(number) {
   let string = number.toString();
   string = "Boop!";
   return string;
 }
-
 function beMyNeighbor(number, name) {
   let string = number.toString();
   string = "Won't you be my neighbor, " + name + "?";
   return string;
+}
+function fail() {
+  const failMessage = 'Hey buddy, it says "Enter <b>A</b> Number" So how about you try entering a number instead?'
+  return failMessage;
 }
 
 // UI Logic
