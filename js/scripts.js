@@ -54,5 +54,6 @@ function boop(number) {
 
 function beMyNeighbor(number) {
   let string = number.toString();
+  string = "Won't you be my neighbor?"
   return string;
 }
