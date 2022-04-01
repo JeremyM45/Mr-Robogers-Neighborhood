@@ -1,5 +1,3 @@
-// Business Logic
-
 function boopBeep(string, name) {
   string = string.replace(/[a-zA-Z ]/g, " ")
   if(string.includes(" ")) {
@@ -71,14 +69,12 @@ function fail() {
   return failMessage;
 }
 
-// UI Logic
-
 $(document).ready(function()  {
   $("form#enterNumber").submit(function(e)  {
     e.preventDefault();
     const number = $("#inputNumber").val();
     const name = $("#inputName").val();
     const result = boopBeep(number, name);
-    $("#output").html(result);
+    $("#output").html(result)
   });
 });
