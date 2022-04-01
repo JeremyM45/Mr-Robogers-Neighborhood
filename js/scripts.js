@@ -73,7 +73,9 @@ $(document).ready(function()  {
   $("form#enterNumber").submit(function(e)  {
     e.preventDefault();
     const number = $("#inputNumber").val();
+    const name = $("#inputName").val();
     const result = boopBeep(number);
     $("#output").html(result);
+    console.log(name)
   });
 });
