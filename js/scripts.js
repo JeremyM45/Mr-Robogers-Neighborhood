@@ -11,7 +11,27 @@ function boopBeep(string, name) {
     numArray.push(number);
   }
   numArray.forEach(function(element) {
-    finalString = detectNum(element, name);
+    let finalString = detectNum(element, name);
+    finalArray.push(finalString);
+  })
+  const results = finalArray.join(", ");
+  return results;
+}
+function boopBeepReversed(string, name) {
+  string = string.replace(/[a-zA-Z ]/g, " ");
+  if(string.includes(" ")) {
+    return fail();
+  }
+  let num = parseInt(string);
+  let numArray = [];
+  const finalArray = [];
+  for (let i = 0; i <= num; i++)  {
+    number = i;
+    numArray.push(number);
+  }
+  numArray = numArray.reverse();
+  numArray.forEach(function(element) {
+    let finalString = detectNum(element, name);
     finalArray.push(finalString);
   })
   const results = finalArray.join(", ");
@@ -70,9 +90,7 @@ $(document).ready(function()  {
     e.preventDefault();
     const number = $("#inputNumber").val();
     const name = $("#inputName").val();
-    let result = boopBeep(number, name);
-    let reversed = result.split("");
-    reversed = reversed.reverse();
-    $(".output").html(reversed);
+    let result = boopBeepReversed(number, name);
+    $(".output").html(result);
   });
 });
