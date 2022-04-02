@@ -25,44 +25,32 @@ function detectNum(number, name)  {
   })
   for (let i = 0; i < splitNum.length; i++) {
     if (splitNum[i] === 3)  {
-      let wholeNum = splitNum.join("");
-      wholeNum = parseInt(wholeNum);
-      replaceNum = beMyNeighbor(wholeNum, name);
-      return replaceNum;
+      return beMyNeighbor(name);
     } 
   }
   for (let i = 0; i < splitNum.length; i++)  {
     if (splitNum[i] === 2) {
-      let wholeNum = splitNum.join("");
-      wholeNum = parseInt(wholeNum);
-      replaceNum = boop(wholeNum);
-      return replaceNum;
+      return boop();
     }
   }
   for (let i = 0; i < splitNum.length; i++)  {
     if (splitNum[i] === 1) {
-      let wholeNum = splitNum.join("");
-      wholeNum = parseInt(wholeNum);
-      replaceNum = beep(wholeNum);
-      return replaceNum;
+      return beep();
     }
   }
   let wholeNum = splitNum.join("");
   return wholeNum;
 }
-function beep(number) {
-  let string = number.toString();
-  string = "Beep!";
+function beep() {
+  const string = "Beep!";
   return string;
 }
-function boop(number) {
-  let string = number.toString();
-  string = "Boop!";
+function boop() {
+  const string = "Boop!";
   return string;
 }
-function beMyNeighbor(number, name) {
-  let string = number.toString();
-  string = "Won't you be my neighbor " + name + "?";
+function beMyNeighbor(name) {
+  const string = "Won't you be my neighbor " + name + "?";
   return string;
 }
 function fail() {
