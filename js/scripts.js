@@ -7,13 +7,13 @@ function boopBeep(string, name) {
   const numArray = [];
   const finalArray = [];
   for (let i = 0; i <= num; i++)  {
-    number = i;
+    let number = i;
     numArray.push(number);
   }
   numArray.forEach(function(element) {
     let finalString = detectNum(element, name);
     finalArray.push(finalString);
-  })
+  });
   const results = finalArray.join(", ");
   return results;
 }
@@ -26,14 +26,14 @@ function boopBeepReversed(string, name) {
   let numArray = [];
   const finalArray = [];
   for (let i = 0; i <= num; i++)  {
-    number = i;
+    let number = i;
     numArray.push(number);
   }
   numArray = numArray.reverse();
   numArray.forEach(function(element) {
     let finalString = detectNum(element, name);
     finalArray.push(finalString);
-  })
+  });
   const results = finalArray.join(", ");
   return results;
 }
@@ -42,7 +42,7 @@ function detectNum(number, name)  {
   splitNum.forEach(function(element, index)  {
     let digit = parseInt(element);
     splitNum[index] = digit;
-  })
+  });
   for (let i = 0; i < splitNum.length; i++) {
     if (splitNum[i] === 3)  {
       return beMyNeighbor(name);

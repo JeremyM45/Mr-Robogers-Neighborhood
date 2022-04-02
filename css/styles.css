@@ -22,17 +22,20 @@ img {
 .col-lg-12  {
   text-align: center;
 }
-.row .btn  {
+#enterNumber .btn  {
   position: relative;
-  left: 36%;
+  left: 47%;
   border: 1px solid black;
   font-family: Segoe Print;
   color: red;
+  margin-bottom: 1%;
 }
-.row  #reversed {
+#reversed .btn {
   position: relative;
-  left: 43%;
+  left: 45%;
   font-family: Segoe Print;
+  color: red;
+  border: 1px solid black;
 }
 .btn:hover  {
   background-color: rgb(94, 180, 251);
