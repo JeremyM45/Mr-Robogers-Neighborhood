@@ -1,7 +1,7 @@
 function boopBeep(string, name) {
   string = string.replace(/[a-zA-Z ]/g, " ");
   if(string.includes(" ")) {
-    return fail();
+    return fail(name);
   }
   let num = parseInt(string);
   const numArray = [];
@@ -20,7 +20,7 @@ function boopBeep(string, name) {
 function boopBeepReversed(string, name) {
   string = string.replace(/[a-zA-Z ]/g, " ");
   if(string.includes(" ")) {
-    return fail();
+    return fail(name);
   }
   let num = parseInt(string);
   let numArray = [];
@@ -73,8 +73,8 @@ function beMyNeighbor(name) {
   const string = "Won't you be my neighbor " + name + "?";
   return string;
 }
-function fail() {
-  const failMessage = 'Hey buddy, it says "Enter <b>A</b> Number" So how about you try entering a number instead?';
+function fail(name) {
+  const failMessage = 'Hey ' + name + ', it says "Enter <b>A</b> Number" So how about you try entering a number instead?';
   return failMessage;
 }
 
