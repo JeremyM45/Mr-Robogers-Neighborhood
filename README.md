@@ -25,12 +25,10 @@ This webpage has two input fields, name and number. An output will be displayed 
 
 * Clone repo from GitHub using this link (https://github.com/JeremyM45/Mr-Robogers-Neighborhood)
 
-* Navigate to the Portfolio-Webpage folder
-
+* Navigate to the Mr-Robogers-Neighborhood folder
 (Users/Username/Desktop/Mr-Robogers-Neighborhood)
 
 * Open index.html file in your browser
-
 (Users/Username/Desktop/Mr-Robogers-Neighborhood/index.html)
 
 * Enter a name and a number in their respective input fields.
